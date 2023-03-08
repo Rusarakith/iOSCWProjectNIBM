@@ -21,17 +21,17 @@ class FlashScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let label : UILabel = {
-        let name = UILabel()
-        name.translatesAutoresizingMaskIntoConstraints = false
-        name.font = .systemFont(ofSize: 24, weight: .semibold)
-        //name.backgroundColor = .systemGreen
-        name.textAlignment = .center
-        name.center = .zero
-        name.text = "Rusara Kithsahan"
-        
-        return name
-    }()
+//    let label : UILabel = {
+//        let name = UILabel()
+//        name.translatesAutoresizingMaskIntoConstraints = false
+//        name.font = .systemFont(ofSize: 24, weight: .semibold)
+//        //name.backgroundColor = .systemGreen
+//        name.textAlignment = .center
+//        name.center = .zero
+//        name.text = "Rusara Kithsahan"
+//
+//        return name
+//    }()
     
     let logoImage : UIImageView = {
         let logo = UIImageView()
