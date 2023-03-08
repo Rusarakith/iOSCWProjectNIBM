@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39A29B5B0B4009089FC /* AppDelegate.swift */; };
+		80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */; };
+		80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39E29B5B0B4009089FC /* ViewController.swift */; };
+		80E8C3A229B5B0B4009089FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A029B5B0B4009089FC /* Main.storyboard */; };
+		80E8C3A429B5B0B5009089FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A329B5B0B5009089FC /* Assets.xcassets */; };
+		80E8C3A729B5B0B5009089FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */; };
+		80E8C3B229B5B0B6009089FC /* GymMasterProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3B129B5B0B6009089FC /* GymMasterProTests.swift */; };
+		80E8C3BC29B5B0B6009089FC /* GymMasterProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3BB29B5B0B6009089FC /* GymMasterProUITests.swift */; };
+		80E8C3BE29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */; };
+		80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */; };
+		80E8C3CD29B5B56E009089FC /* gymExerciseClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80E8C3AE29B5B0B6009089FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E8C38F29B5B0B4009089FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E8C39629B5B0B4009089FC;
+			remoteInfo = GymMasterPro;
+		};
+		80E8C3B829B5B0B6009089FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E8C38F29B5B0B4009089FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E8C39629B5B0B4009089FC;
+			remoteInfo = GymMasterPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80E8C39729B5B0B4009089FC /* GymMasterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMasterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E8C39A29B5B0B4009089FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80E8C39E29B5B0B4009089FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80E8C3A129B5B0B4009089FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80E8C3A329B5B0B5009089FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E8C3A629B5B0B5009089FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80E8C3A829B5B0B5009089FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E8C3AD29B5B0B6009089FC /* GymMasterProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymMasterProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E8C3B129B5B0B6009089FC /* GymMasterProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterProTests.swift; sourceTree = "<group>"; };
+		80E8C3B729B5B0B6009089FC /* GymMasterProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymMasterProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E8C3BB29B5B0B6009089FC /* GymMasterProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterProUITests.swift; sourceTree = "<group>"; };
+		80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterProUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = gymExerciseClip.mp4; path = ../../../Downloads/gymExerciseClip.mp4; sourceTree = "<group>"; };
+		80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashScreenViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E8C39429B5B0B4009089FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3AA29B5B0B6009089FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3B429B5B0B6009089FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80E8C38E29B5B0B4009089FC = {
+			isa = PBXGroup;
+			children = (
+				80E8C39929B5B0B4009089FC /* GymMasterPro */,
+				80E8C3B029B5B0B6009089FC /* GymMasterProTests */,
+				80E8C3BA29B5B0B6009089FC /* GymMasterProUITests */,
+				80E8C39829B5B0B4009089FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80E8C39829B5B0B4009089FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C39729B5B0B4009089FC /* GymMasterPro.app */,
+				80E8C3AD29B5B0B6009089FC /* GymMasterProTests.xctest */,
+				80E8C3B729B5B0B6009089FC /* GymMasterProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E8C39929B5B0B4009089FC /* GymMasterPro */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C39A29B5B0B4009089FC /* AppDelegate.swift */,
+				80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */,
+				80E8C39E29B5B0B4009089FC /* ViewController.swift */,
+				80E8C3A029B5B0B4009089FC /* Main.storyboard */,
+				80E8C3A329B5B0B5009089FC /* Assets.xcassets */,
+				80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */,
+				80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */,
+				80E8C3A829B5B0B5009089FC /* Info.plist */,
+				80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */,
+			);
+			path = GymMasterPro;
+			sourceTree = "<group>";
+		};
+		80E8C3B029B5B0B6009089FC /* GymMasterProTests */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C3B129B5B0B6009089FC /* GymMasterProTests.swift */,
+			);
+			path = GymMasterProTests;
+			sourceTree = "<group>";
+		};
+		80E8C3BA29B5B0B6009089FC /* GymMasterProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C3BB29B5B0B6009089FC /* GymMasterProUITests.swift */,
+				80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */,
+			);
+			path = GymMasterProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E8C39629B5B0B4009089FC /* GymMasterPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E8C3C129B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterPro" */;
+			buildPhases = (
+				80E8C39329B5B0B4009089FC /* Sources */,
+				80E8C39429B5B0B4009089FC /* Frameworks */,
+				80E8C39529B5B0B4009089FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymMasterPro;
+			productName = GymMasterPro;
+			productReference = 80E8C39729B5B0B4009089FC /* GymMasterPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80E8C3AC29B5B0B6009089FC /* GymMasterProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E8C3C429B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterProTests" */;
+			buildPhases = (
+				80E8C3A929B5B0B6009089FC /* Sources */,
+				80E8C3AA29B5B0B6009089FC /* Frameworks */,
+				80E8C3AB29B5B0B6009089FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E8C3AF29B5B0B6009089FC /* PBXTargetDependency */,
+			);
+			name = GymMasterProTests;
+			productName = GymMasterProTests;
+			productReference = 80E8C3AD29B5B0B6009089FC /* GymMasterProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80E8C3B629B5B0B6009089FC /* GymMasterProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E8C3C729B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterProUITests" */;
+			buildPhases = (
+				80E8C3B329B5B0B6009089FC /* Sources */,
+				80E8C3B429B5B0B6009089FC /* Frameworks */,
+				80E8C3B529B5B0B6009089FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E8C3B929B5B0B6009089FC /* PBXTargetDependency */,
+			);
+			name = GymMasterProUITests;
+			productName = GymMasterProUITests;
+			productReference = 80E8C3B729B5B0B6009089FC /* GymMasterProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E8C38F29B5B0B4009089FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					80E8C39629B5B0B4009089FC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					80E8C3AC29B5B0B6009089FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 80E8C39629B5B0B4009089FC;
+					};
+					80E8C3B629B5B0B6009089FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 80E8C39629B5B0B4009089FC;
+					};
+				};
+			};
+			buildConfigurationList = 80E8C39229B5B0B4009089FC /* Build configuration list for PBXProject "GymMasterPro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80E8C38E29B5B0B4009089FC;
+			productRefGroup = 80E8C39829B5B0B4009089FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E8C39629B5B0B4009089FC /* GymMasterPro */,
+				80E8C3AC29B5B0B6009089FC /* GymMasterProTests */,
+				80E8C3B629B5B0B6009089FC /* GymMasterProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E8C39529B5B0B4009089FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E8C3A729B5B0B5009089FC /* LaunchScreen.storyboard in Resources */,
+				80E8C3A429B5B0B5009089FC /* Assets.xcassets in Resources */,
+				80E8C3A229B5B0B4009089FC /* Main.storyboard in Resources */,
+				80E8C3CD29B5B56E009089FC /* gymExerciseClip.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3AB29B5B0B6009089FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3B529B5B0B6009089FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E8C39329B5B0B4009089FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */,
+				80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */,
+				80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */,
+				80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3A929B5B0B6009089FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E8C3B229B5B0B6009089FC /* GymMasterProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E8C3B329B5B0B6009089FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E8C3BE29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift in Sources */,
+				80E8C3BC29B5B0B6009089FC /* GymMasterProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80E8C3AF29B5B0B6009089FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E8C39629B5B0B4009089FC /* GymMasterPro */;
+			targetProxy = 80E8C3AE29B5B0B6009089FC /* PBXContainerItemProxy */;
+		};
+		80E8C3B929B5B0B6009089FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E8C39629B5B0B4009089FC /* GymMasterPro */;
+			targetProxy = 80E8C3B829B5B0B6009089FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80E8C3A029B5B0B4009089FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E8C3A129B5B0B4009089FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E8C3A629B5B0B5009089FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E8C3BF29B5B0B6009089FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80E8C3C029B5B0B6009089FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E8C3C229B5B0B6009089FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46VP59HGRJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymMasterPro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GymMaster Pro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80E8C3C329B5B0B6009089FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46VP59HGRJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymMasterPro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GymMaster Pro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80E8C3C529B5B0B6009089FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymMasterPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymMasterPro";
+			};
+			name = Debug;
+		};
+		80E8C3C629B5B0B6009089FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymMasterPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymMasterPro";
+			};
+			name = Release;
+		};
+		80E8C3C829B5B0B6009089FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymMasterPro;
+			};
+			name = Debug;
+		};
+		80E8C3C929B5B0B6009089FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.GymMasterProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymMasterPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E8C39229B5B0B4009089FC /* Build configuration list for PBXProject "GymMasterPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E8C3BF29B5B0B6009089FC /* Debug */,
+				80E8C3C029B5B0B6009089FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E8C3C129B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E8C3C229B5B0B6009089FC /* Debug */,
+				80E8C3C329B5B0B6009089FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E8C3C429B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E8C3C529B5B0B6009089FC /* Debug */,
+				80E8C3C629B5B0B6009089FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E8C3C729B5B0B6009089FC /* Build configuration list for PBXNativeTarget "GymMasterProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E8C3C829B5B0B6009089FC /* Debug */,
+				80E8C3C929B5B0B6009089FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80E8C38F29B5B0B4009089FC /* Project object */;
+}
