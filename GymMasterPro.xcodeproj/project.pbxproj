@@ -18,6 +18,8 @@
 		80E8C3BE29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */; };
 		80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */; };
 		80E8C3CD29B5B56E009089FC /* gymExerciseClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */; };
+		80E8C41029BD0C2C009089FC /* DataFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */; };
+		80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41129BD0EB1009089FC /* IconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterProUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = gymExerciseClip.mp4; path = ../../../Downloads/gymExerciseClip.mp4; sourceTree = "<group>"; };
 		80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashScreenViewController.swift; sourceTree = "<group>"; };
+		80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormViewController.swift; sourceTree = "<group>"; };
+		80E8C41129BD0EB1009089FC /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */,
 				80E8C3A829B5B0B5009089FC /* Info.plist */,
 				80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */,
+				80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */,
+				80E8C41129BD0EB1009089FC /* IconButton.swift */,
 			);
 			path = GymMasterPro;
 			sourceTree = "<group>";
@@ -265,10 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */,
 				80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */,
 				80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */,
 				80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */,
 				80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */,
+				80E8C41029BD0C2C009089FC /* DataFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

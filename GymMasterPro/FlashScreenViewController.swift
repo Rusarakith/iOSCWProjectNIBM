@@ -56,22 +56,32 @@ class FlashScreenViewController: UIViewController {
         return name
     }()
     
-    let startButton : UIButton = {
-        let button = UIButton()
+    let iconButton : UIButton = {
+        let button = IconButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Get Start", for: .normal)
-        button.titleLabel?.font = UIFont(name: "SF Compact", size: 25)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
-        button.backgroundColor = .systemBlue
-//        button.layer.borderWidth = 2
-//        button.layer.borderColor = UIColor.systemBlue.cgColor
-        button.layer.cornerRadius = 25
-//        button.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
-//        button.layer.shadowOpacity = 0.4
-//        button.layer.shadowRadius = 0.5
+        button.configure(with: IconButtonViewModel(primaryText: "Get Started",
+                                                   icon: UIImage(named: "rightArrow"),
+                                                   backgroundColor: .white))
         
         return button
     }()
+    
+//    let startButton : UIButton = {
+//        let button = UIButton()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.setTitle("Get Started", for: .normal)
+//        button.titleLabel?.font = UIFont(name: "SF Compact", size: 20)
+//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+//        button.backgroundColor = .systemBlue
+////        button.layer.borderWidth = 2
+////        button.layer.borderColor = UIColor.systemBlue.cgColor
+//        button.layer.cornerRadius = 35
+////        button.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+////        button.layer.shadowOpacity = 0.4
+////        button.layer.shadowRadius = 0.5
+//
+//        return button
+//    }()
     
     func playVideo(){
         let path = Bundle.main.path(forResource: "gymExerciseClip", ofType: "mp4")
@@ -140,8 +150,8 @@ class FlashScreenViewController: UIViewController {
         animation.fillMode = .forwards
         animation.isRemovedOnCompletion = false
         animation.beginTime = CACurrentMediaTime()
-        self.view.addSubview(startButton)
-        startButton.layer.add(animation, forKey: nil)
+        self.view.addSubview(iconButton)
+        iconButton.layer.add(animation, forKey: nil)
         
         setupButtonConstraints()
     }
@@ -173,10 +183,10 @@ class FlashScreenViewController: UIViewController {
     }
     
     func setupButtonConstraints(){
-        startButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
-        startButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -330 ).isActive = true
-        startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80).isActive = true
-        startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -80).isActive = true
+        iconButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 700).isActive = true
+        iconButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -130 ).isActive = true
+        iconButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        iconButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
     }
     
 }
