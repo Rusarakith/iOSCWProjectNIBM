@@ -18,7 +18,15 @@ class FlashScreenViewController: UIViewController {
         //setupConstraints()
 
         playVideo()
+        
+        iconButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func gotonextAction() {
+        let vc = DataFormViewController()
+//        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 //    let label : UILabel = {
