@@ -23,7 +23,7 @@ final class leftIconButton: UIButton {
         label.numberOfLines = 1
         label.textAlignment = .center
         label.textColor = .black
-        label.font = .systemFont(ofSize: 20, weight: .semibold)
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
         
         return label
     }()
@@ -42,7 +42,8 @@ final class leftIconButton: UIButton {
         addSubview(iconImage)
         clipsToBounds = true
         layer.cornerRadius = 30
-        //layer.borderWidth = 1
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.systemGray3.cgColor
         layer.backgroundColor = UIColor.secondarySystemBackground.cgColor
     }
 
