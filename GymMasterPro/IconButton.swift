@@ -11,9 +11,12 @@ struct IconButtonViewModel{
     let primaryText : String
     let icon : UIImage?
     let backgroundColor : UIColor?
+    let iconSpace : CGFloat
 }
 
 final class IconButton: UIButton {
+    
+    private var iconSpaceFloat : CGFloat = 0
     
     private let primaryLabel : UILabel = {
         let label = UILabel()
@@ -51,6 +54,7 @@ final class IconButton: UIButton {
         primaryLabel.text = viewModel.primaryText
         backgroundColor = viewModel.backgroundColor
         iconImage.image = viewModel.icon
+        iconSpaceFloat = viewModel.iconSpace
     }
     
     override func layoutSubviews() {
@@ -62,7 +66,7 @@ final class IconButton: UIButton {
                                     y: 0,
                                     width: primaryLabel.frame.size.width,
                                     height: frame.size.height)
-        iconImage.frame = CGRect(x: iconX + iconSize + 90,
+        iconImage.frame = CGRect(x: iconX + iconSize + iconSpaceFloat,
                                  y: (frame.size.height - iconSize) / 2,
                                  width: iconSize,
                                  height: iconSize)

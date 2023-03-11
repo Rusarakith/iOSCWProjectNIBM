@@ -59,9 +59,10 @@ class FlashScreenViewController: UIViewController {
     let iconButton : UIButton = {
         let button = IconButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.configure(with: IconButtonViewModel(primaryText: "Get Started",
+        button.configure(with: IconButtonViewModel(primaryText: "Get Started for free",
                                                    icon: UIImage(named: "rightArrow"),
-                                                   backgroundColor: .white))
+                                                   backgroundColor: .white,
+                                                   iconSpace: 160))
         
         return button
     }()
