@@ -37,6 +37,9 @@ class FlashScreenViewController: UIViewController {
         let logo = UIImageView()
         logo.translatesAutoresizingMaskIntoConstraints = false
         logo.image = UIImage(named: "logoWhite")
+        logo.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        logo.layer.shadowOpacity = 1.0
+        logo.layer.shadowRadius = 1.0
         logo.setRounded()
         
         return logo
@@ -46,8 +49,28 @@ class FlashScreenViewController: UIViewController {
         let name = UIImageView()
         name.translatesAutoresizingMaskIntoConstraints = false
         name.image = UIImage(named: "nameImage")
+        name.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        name.layer.shadowOpacity = 1.0
+        name.layer.shadowRadius = 1.0
         
         return name
+    }()
+    
+    let startButton : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Get Start", for: .normal)
+        button.titleLabel?.font = UIFont(name: "SF Compact", size: 25)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
+        button.backgroundColor = .systemBlue
+//        button.layer.borderWidth = 2
+//        button.layer.borderColor = UIColor.systemBlue.cgColor
+        button.layer.cornerRadius = 25
+//        button.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+//        button.layer.shadowOpacity = 0.4
+//        button.layer.shadowRadius = 0.5
+        
+        return button
     }()
     
     func playVideo(){
@@ -72,6 +95,10 @@ class FlashScreenViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now()+1.5){
             self.animateNameLogo()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+            self.animateButton()
         }
         
         
@@ -105,6 +132,20 @@ class FlashScreenViewController: UIViewController {
         setupNameConstraints()
     }
     
+    func animateButton(){
+        let animation = CABasicAnimation(keyPath: "opacity")
+        animation.fromValue = 0
+        animation.toValue = 1
+        animation.duration = 1.5
+        animation.fillMode = .forwards
+        animation.isRemovedOnCompletion = false
+        animation.beginTime = CACurrentMediaTime()
+        self.view.addSubview(startButton)
+        startButton.layer.add(animation, forKey: nil)
+        
+        setupButtonConstraints()
+    }
+    
     @objc func playerItemDidReachEnd(){
         player!.seek(to: CMTime.zero)
     }
@@ -129,6 +170,13 @@ class FlashScreenViewController: UIViewController {
 //        nameImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50 ).isActive = true
         nameImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 65).isActive = true
         nameImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -65).isActive = true
+    }
+    
+    func setupButtonConstraints(){
+        startButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
+        startButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -330 ).isActive = true
+        startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80).isActive = true
+        startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -80).isActive = true
     }
     
 }
