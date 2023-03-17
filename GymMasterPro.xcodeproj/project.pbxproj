@@ -21,6 +21,7 @@
 		80E8C41029BD0C2C009089FC /* DataFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */; };
 		80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41129BD0EB1009089FC /* IconButton.swift */; };
 		80E8C41429BD1D24009089FC /* leftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41329BD1D24009089FC /* leftIconButton.swift */; };
+		80E8C41629C3E9D4009089FC /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormViewController.swift; sourceTree = "<group>"; };
 		80E8C41129BD0EB1009089FC /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		80E8C41329BD1D24009089FC /* leftIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftIconButton.swift; sourceTree = "<group>"; };
+		80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */,
 				80E8C41129BD0EB1009089FC /* IconButton.swift */,
 				80E8C41329BD1D24009089FC /* leftIconButton.swift */,
+				80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */,
 			);
 			path = GymMasterPro;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E8C41629C3E9D4009089FC /* PersonalDataViewController.swift in Sources */,
 				80E8C41429BD1D24009089FC /* leftIconButton.swift in Sources */,
 				80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */,
 				80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */,

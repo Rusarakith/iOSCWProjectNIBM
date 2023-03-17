@@ -22,7 +22,6 @@ final class IconButton: UIButton {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.textColor = .black
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         
         return label

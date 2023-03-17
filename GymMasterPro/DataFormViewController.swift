@@ -15,6 +15,24 @@ class DataFormViewController: UIViewController {
         view.backgroundColor = .white
         
         addConstraints()
+        
+        continueButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
+        appleButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
+    @objc func gotonextAction() {
+        let vc = PersonalDataViewController()
+//        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     let scrollView : UIScrollView = {
@@ -46,6 +64,7 @@ class DataFormViewController: UIViewController {
         label.text = "Your email address"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16, weight: .semibold)
+        label.textColor = .systemGray2
 //        label.textAlignment = .center
         
         return label
@@ -154,13 +173,13 @@ class DataFormViewController: UIViewController {
         nameImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 130).isActive = true
         nameImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -130).isActive = true
         
-        emailLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
-        emailLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -630 ).isActive = true
-        emailLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
-        emailLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
+        emailLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 207).isActive = true
+        emailLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -623 ).isActive = true
+        emailLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+        emailLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
         
-        emailTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 260).isActive = true
-        emailTextField.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -585 ).isActive = true
+        emailTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 255).isActive = true
+        emailTextField.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -590 ).isActive = true
         emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
         
@@ -180,12 +199,12 @@ class DataFormViewController: UIViewController {
         seperatorText.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -170).isActive = true
         
         googleButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 460).isActive = true
-        googleButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -370 ).isActive = true
+        googleButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -375 ).isActive = true
         googleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         googleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
         
         appleButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 540).isActive = true
-        appleButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -290 ).isActive = true
+        appleButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -295 ).isActive = true
         appleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         appleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
     }
