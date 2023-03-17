@@ -50,7 +50,17 @@ class PersonalDataViewController: UIViewController {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
         
+        let bdDate = dateofbirthPicker.date
+        let now = Date()
+        
+        let calender: NSCalendar! = NSCalendar(calendarIdentifier: .gregorian)
+        
+        let calAge = calender.components(.year, from: bdDate, to: now, options: [])
+        
+        let age = calAge.year
+        
         self.dobTextField.text = dateFormatter.string(from: dateofbirthPicker.date)
+        self.ageTextField.text = age?.codingKey.stringValue
         self.view.endEditing(true)
     }
     
