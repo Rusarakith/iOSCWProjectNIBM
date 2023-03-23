@@ -176,10 +176,12 @@ class FlashScreenViewController: UIViewController {
 //        label.topAnchor.constraint(equalTo: view.topAnchor).isActive=true
 //        label.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive=true
 
-        logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 110).isActive = true
-        logoImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -650 ).isActive = true
-        logoImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150).isActive = true
-        logoImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -130).isActive = true
+        NSLayoutConstraint.activate([
+            logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
+            logoImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -650 ),
+            logoImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150),
+            logoImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -130),
+        ])
     }
     
     func setupNameConstraints(){

@@ -22,6 +22,7 @@
 		80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41129BD0EB1009089FC /* IconButton.swift */; };
 		80E8C41429BD1D24009089FC /* leftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41329BD1D24009089FC /* leftIconButton.swift */; };
 		80E8C41629C3E9D4009089FC /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */; };
+		80E8C41829C92A32009089FC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C41729C92A32009089FC /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		80E8C41129BD0EB1009089FC /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		80E8C41329BD1D24009089FC /* leftIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftIconButton.swift; sourceTree = "<group>"; };
 		80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		80E8C41729C92A32009089FC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				80E8C41129BD0EB1009089FC /* IconButton.swift */,
 				80E8C41329BD1D24009089FC /* leftIconButton.swift */,
 				80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */,
+				80E8C41729C92A32009089FC /* HomeScreenViewController.swift */,
 			);
 			path = GymMasterPro;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */,
 				80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */,
 				80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */,
+				80E8C41829C92A32009089FC /* HomeScreenViewController.swift in Sources */,
 				80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */,
 				80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */,
 				80E8C41029BD0C2C009089FC /* DataFormViewController.swift in Sources */,
@@ -464,7 +468,8 @@
 				DEVELOPMENT_TEAM = 46VP59HGRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymMasterPro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "GymMaster Pro";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -493,7 +498,8 @@
 				DEVELOPMENT_TEAM = 46VP59HGRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymMasterPro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "GymMaster Pro";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

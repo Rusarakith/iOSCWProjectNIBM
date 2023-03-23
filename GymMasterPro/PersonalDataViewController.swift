@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonalDataViewController: UIViewController {
+class PersonalDataViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,9 @@ class PersonalDataViewController: UIViewController {
         addConstraints()
         
         createDatePicker()
+        
+        submitButton.addTarget(self, action: #selector(chooseImage), for: .touchUpInside)
+        
     }
     
     @objc func dismissKeyboard(){
@@ -272,6 +275,47 @@ class PersonalDataViewController: UIViewController {
         
         return button
     }()
+    
+    let profilePicView : UIImageView = {
+        let imageView = UIImageView()
+        imageView.layer.cornerRadius = 50
+        imageView.backgroundColor = .systemGreen
+        
+        return imageView
+    }()
+    
+    @objc func chooseImage(_ sender: Any){
+        let imagepicker = UIImagePickerController()
+        imagepicker.delegate = self
+        
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Chooose", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (acttion:UIAlertAction) in
+            imagepicker.sourceType = .camera
+            self.present(imagepicker, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (acttion:UIAlertAction) in
+            imagepicker.sourceType = .photoLibrary
+            self.present(imagepicker, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImageControllerOriginalImage")] as? UIImage{
+            profilePicView.image = image
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 
     func addConstraints(){
         self.view.addSubview(scrollView)
@@ -290,12 +334,18 @@ class PersonalDataViewController: UIViewController {
         self.scrollView.addSubview(heightLabel)
         self.scrollView.addSubview(heightTextField)
         self.scrollView.addSubview(submitButton)
+//        self.scrollView.addSubview(profilePicView)
         
         
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+//        profilePicView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
+//        profilePicView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -710 ).isActive = true
+//        profilePicView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 145).isActive = true
+//        profilePicView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -145).isActive = true
         
         logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
         logoImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -710 ).isActive = true

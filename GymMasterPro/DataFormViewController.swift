@@ -25,6 +25,11 @@ class DataFormViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
