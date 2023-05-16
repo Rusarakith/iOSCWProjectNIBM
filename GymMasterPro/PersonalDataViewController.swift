@@ -12,6 +12,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
@@ -22,12 +23,33 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
         
         createDatePicker()
         
-        submitButton.addTarget(self, action: #selector(chooseImage), for: .touchUpInside)
+        submitButton.addTarget(self, action: #selector(saveUserData), for: .touchUpInside)
         
     }
     
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    @objc func saveUserData() async{
+        var uuid: String = NSUUID().uuidString
+        let data = UserDataModel(
+            uid: uuid,
+            email: "",
+            firstName:
+                firstNameTextField.text ?? "",
+            lastName: lastNameTextField.text ?? "",
+            dob: dobTextField.text ?? "",
+            age: ageTextField.text ?? "",
+            height: heightTextField.text ?? "",
+            weight: weightTextField.text ?? "")
+        Task{
+            do{
+                let result: () = try await UserManager.shared.createNewUser(user: data)
+                print(result)
+            }
+        }
+        
     }
     
     func createToolbar() -> UIToolbar {

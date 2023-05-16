@@ -6,17 +6,17 @@
 //
 
 import UIKit
+import Firebase
 
 class DataFormViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
         
         addConstraints()
         
-        continueButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
+        continueButton.addTarget(self, action: #selector(signIn), for: .touchUpInside)
         googleButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
         appleButton.addTarget(self, action: #selector(gotonextAction), for: .touchUpInside)
         
@@ -32,6 +32,23 @@ class DataFormViewController: UIViewController {
     
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    @objc func signIn(){
+        guard ((emailTextField.text?.isEmpty) != nil) else{
+            print("No email found")
+            return
+        }
+        Task{
+            do{
+                let result = try await AuthenticationManager.shared.createUser(email: emailTextField.text!, password: "P@$$w0rd")
+                if(result != nil){
+                    gotonextAction()
+                }else{
+                    print("User did not create successfully")
+                }
+            }
+        }
     }
     
     @objc func gotonextAction() {

@@ -36,7 +36,7 @@ class HomeScreenViewController: UIViewController, UIImagePickerControllerDelegat
     let profilePicView : UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = imageView.frame.height / 2
+//        imageView.layer.cornerRadius = imageView.constraints.heightAnchor / 2
         imageView.clipsToBounds =  true
         imageView.backgroundColor = .systemGreen
         
@@ -77,7 +77,7 @@ class HomeScreenViewController: UIViewController, UIImagePickerControllerDelegat
         picker.dismiss(animated: true, completion: nil)
     }
     func addConstraints(){
-        self.view.addSubview(profilePicView)
+//        self.view.addSubview(profilePicView)
         self.view.addSubview(submitButton)
         
         profilePicView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
