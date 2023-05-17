@@ -42,11 +42,8 @@ class DataFormViewController: UIViewController {
         Task{
             do{
                 let result = try await AuthenticationManager.shared.createUser(email: emailTextField.text!, password: "P@$$w0rd")
-                if(result != nil){
+                print(result)
                     gotonextAction()
-                }else{
-                    print("User did not create successfully")
-                }
             }
         }
     }

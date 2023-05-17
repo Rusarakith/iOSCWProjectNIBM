@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 class PersonalDataViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -31,24 +33,29 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
         view.endEditing(true)
     }
     
-    @objc func saveUserData() async{
-        var uuid: String = NSUUID().uuidString
-        let data = UserDataModel(
-            uid: uuid,
-            email: "",
-            firstName:
-                firstNameTextField.text ?? "",
-            lastName: lastNameTextField.text ?? "",
-            dob: dobTextField.text ?? "",
-            age: ageTextField.text ?? "",
-            height: heightTextField.text ?? "",
-            weight: weightTextField.text ?? "")
-        Task{
-            do{
-                let result: () = try await UserManager.shared.createNewUser(user: data)
-                print(result)
-            }
-        }
+    @objc func saveUserData(){
+        print("Button clicked")
+        let uuid: String = NSUUID().uuidString
+        print(uuid)
+        
+        let dobDate = dobTextField.text!
+        let age = ageTextField.text!
+        let userAge: Int = Int(age)!
+        let height = heightTextField.text!
+        let userHeight: Int = Int(height)!
+        let weight = weightTextField.text!
+        let userWeight: Int = Int(weight)!
+        
+        let data = ["uid":uuid,"email":"", "firstName":firstNameTextField.text!, "lastName":lastNameTextField.text!, "dob":dobDate as Any, "age":userAge, "height":userHeight, "weight":userWeight] as [String : Any]
+        
+//        Firestore.firestore().collection("User").document(uuid).setData(data)
+        UserManager.shared.createUser(data: data, uuid: uuid)
+        
+        print("Done!")
+//        Task{
+//            do{ Firestore.firestore().collection("User").document("12000").setData(["data":"Hi"])
+//            }
+//        }
         
     }
     
