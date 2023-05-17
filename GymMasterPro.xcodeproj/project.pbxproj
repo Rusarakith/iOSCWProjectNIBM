@@ -17,12 +17,11 @@
 		80B5D8D02A12957500CDCDD7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 80B5D8CF2A12957500CDCDD7 /* FirebaseFirestore */; };
 		80B5D8D22A12957500CDCDD7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80B5D8D12A12957500CDCDD7 /* FirebaseFirestoreSwift */; };
 		80B5D8D42A1298D700CDCDD7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8D32A1298D700CDCDD7 /* UserManager.swift */; };
+		80B5D8DD2A1556D500CDCDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B5D8DC2A1556D500CDCDD7 /* Main.storyboard */; };
 		80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39A29B5B0B4009089FC /* AppDelegate.swift */; };
 		80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */; };
 		80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39E29B5B0B4009089FC /* ViewController.swift */; };
-		80E8C3A229B5B0B4009089FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A029B5B0B4009089FC /* Main.storyboard */; };
 		80E8C3A429B5B0B5009089FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A329B5B0B5009089FC /* Assets.xcassets */; };
-		80E8C3A729B5B0B5009089FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */; };
 		80E8C3B229B5B0B6009089FC /* GymMasterProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3B129B5B0B6009089FC /* GymMasterProTests.swift */; };
 		80E8C3BC29B5B0B6009089FC /* GymMasterProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3BB29B5B0B6009089FC /* GymMasterProUITests.swift */; };
 		80E8C3BE29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C3BD29B5B0B6009089FC /* GymMasterProUITestsLaunchTests.swift */; };
@@ -56,13 +55,12 @@
 		80B5D8C42A11AC4800CDCDD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80B5D8CD2A127E0100CDCDD7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		80B5D8D32A1298D700CDCDD7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		80B5D8DC2A1556D500CDCDD7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		80E8C39729B5B0B4009089FC /* GymMasterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMasterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8C39A29B5B0B4009089FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80E8C39E29B5B0B4009089FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80E8C3A129B5B0B4009089FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80E8C3A329B5B0B5009089FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		80E8C3A629B5B0B5009089FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80E8C3A829B5B0B5009089FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E8C3AD29B5B0B6009089FC /* GymMasterProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymMasterProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8C3B129B5B0B6009089FC /* GymMasterProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMasterProTests.swift; sourceTree = "<group>"; };
@@ -117,9 +115,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		80B5D8D62A1555C200CDCDD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */,
+				80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */,
+				80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80B5D8D72A1555D000CDCDD7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				80B5D8CD2A127E0100CDCDD7 /* AuthenticationManager.swift */,
+				80B5D8D32A1298D700CDCDD7 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		80B5D8D82A1555F400CDCDD7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				80B5D8D92A1555FE00CDCDD7 /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		80B5D8D92A1555FE00CDCDD7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				80E8C41129BD0EB1009089FC /* IconButton.swift */,
+				80E8C41329BD1D24009089FC /* leftIconButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		80E8C38E29B5B0B4009089FC = {
 			isa = PBXGroup;
 			children = (
+				80B5D8DC2A1556D500CDCDD7 /* Main.storyboard */,
 				80E8C39929B5B0B4009089FC /* GymMasterPro */,
 				80E8C3B029B5B0B6009089FC /* GymMasterProTests */,
 				80E8C3BA29B5B0B6009089FC /* GymMasterProUITests */,
@@ -141,23 +176,17 @@
 		80E8C39929B5B0B4009089FC /* GymMasterPro */ = {
 			isa = PBXGroup;
 			children = (
+				80B5D8D82A1555F400CDCDD7 /* Components */,
+				80B5D8D72A1555D000CDCDD7 /* Managers */,
+				80B5D8D62A1555C200CDCDD7 /* Controllers */,
 				80E8C39A29B5B0B4009089FC /* AppDelegate.swift */,
 				80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */,
 				80E8C39E29B5B0B4009089FC /* ViewController.swift */,
-				80E8C3A029B5B0B4009089FC /* Main.storyboard */,
 				80E8C3A329B5B0B5009089FC /* Assets.xcassets */,
-				80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */,
 				80E8C3CA29B5B32D009089FC /* gymExerciseClip.mp4 */,
 				80E8C3A829B5B0B5009089FC /* Info.plist */,
-				80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */,
-				80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */,
-				80E8C41129BD0EB1009089FC /* IconButton.swift */,
-				80E8C41329BD1D24009089FC /* leftIconButton.swift */,
-				80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */,
 				80E8C41729C92A32009089FC /* HomeScreenViewController.swift */,
 				80B5D8C42A11AC4800CDCDD7 /* GoogleService-Info.plist */,
-				80B5D8CD2A127E0100CDCDD7 /* AuthenticationManager.swift */,
-				80B5D8D32A1298D700CDCDD7 /* UserManager.swift */,
 			);
 			path = GymMasterPro;
 			sourceTree = "<group>";
@@ -296,11 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E8C3A729B5B0B5009089FC /* LaunchScreen.storyboard in Resources */,
 				80E8C3A429B5B0B5009089FC /* Assets.xcassets in Resources */,
 				80B5D8C52A11AC4800CDCDD7 /* GoogleService-Info.plist in Resources */,
-				80E8C3A229B5B0B4009089FC /* Main.storyboard in Resources */,
 				80E8C3CD29B5B56E009089FC /* gymExerciseClip.mp4 in Resources */,
+				80B5D8DD2A1556D500CDCDD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,25 +398,6 @@
 			targetProxy = 80E8C3B829B5B0B6009089FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		80E8C3A029B5B0B4009089FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80E8C3A129B5B0B4009089FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		80E8C3A529B5B0B5009089FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80E8C3A629B5B0B5009089FC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		80E8C3BF29B5B0B6009089FC /* Debug */ = {
