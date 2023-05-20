@@ -18,6 +18,11 @@
 		80B5D8D22A12957500CDCDD7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80B5D8D12A12957500CDCDD7 /* FirebaseFirestoreSwift */; };
 		80B5D8D42A1298D700CDCDD7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8D32A1298D700CDCDD7 /* UserManager.swift */; };
 		80B5D8DD2A1556D500CDCDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B5D8DC2A1556D500CDCDD7 /* Main.storyboard */; };
+		80B5D8DF2A1699D100CDCDD7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8DE2A1699D100CDCDD7 /* TabBarViewController.swift */; };
+		80B5D8E12A169A4700CDCDD7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8E02A169A4700CDCDD7 /* HomeViewController.swift */; };
+		80B5D8E32A169A5900CDCDD7 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8E22A169A5900CDCDD7 /* ActivityViewController.swift */; };
+		80B5D8E52A169A7800CDCDD7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8E42A169A7800CDCDD7 /* SearchViewController.swift */; };
+		80B5D8E72A169A8800CDCDD7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5D8E62A169A8800CDCDD7 /* ProfileViewController.swift */; };
 		80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39A29B5B0B4009089FC /* AppDelegate.swift */; };
 		80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */; };
 		80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8C39E29B5B0B4009089FC /* ViewController.swift */; };
@@ -56,6 +61,11 @@
 		80B5D8CD2A127E0100CDCDD7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		80B5D8D32A1298D700CDCDD7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		80B5D8DC2A1556D500CDCDD7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		80B5D8DE2A1699D100CDCDD7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		80B5D8E02A169A4700CDCDD7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80B5D8E22A169A5900CDCDD7 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		80B5D8E42A169A7800CDCDD7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		80B5D8E62A169A8800CDCDD7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		80E8C39729B5B0B4009089FC /* GymMasterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMasterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8C39A29B5B0B4009089FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E8C39C29B5B0B4009089FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +131,11 @@
 				80E8C3CB29B5B358009089FC /* FlashScreenViewController.swift */,
 				80E8C40F29BD0C2C009089FC /* DataFormViewController.swift */,
 				80E8C41529C3E9D4009089FC /* PersonalDataViewController.swift */,
+				80B5D8DE2A1699D100CDCDD7 /* TabBarViewController.swift */,
+				80B5D8E02A169A4700CDCDD7 /* HomeViewController.swift */,
+				80B5D8E22A169A5900CDCDD7 /* ActivityViewController.swift */,
+				80B5D8E42A169A7800CDCDD7 /* SearchViewController.swift */,
+				80B5D8E62A169A8800CDCDD7 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,16 +368,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B5D8E52A169A7800CDCDD7 /* SearchViewController.swift in Sources */,
 				80E8C41629C3E9D4009089FC /* PersonalDataViewController.swift in Sources */,
 				80E8C41429BD1D24009089FC /* leftIconButton.swift in Sources */,
 				80E8C41229BD0EB1009089FC /* IconButton.swift in Sources */,
 				80B5D8CE2A127E0100CDCDD7 /* AuthenticationManager.swift in Sources */,
+				80B5D8DF2A1699D100CDCDD7 /* TabBarViewController.swift in Sources */,
+				80B5D8E72A169A8800CDCDD7 /* ProfileViewController.swift in Sources */,
 				80E8C39F29B5B0B4009089FC /* ViewController.swift in Sources */,
 				80E8C39B29B5B0B4009089FC /* AppDelegate.swift in Sources */,
 				80E8C41829C92A32009089FC /* HomeScreenViewController.swift in Sources */,
 				80E8C39D29B5B0B4009089FC /* SceneDelegate.swift in Sources */,
 				80E8C3CC29B5B358009089FC /* FlashScreenViewController.swift in Sources */,
 				80B5D8D42A1298D700CDCDD7 /* UserManager.swift in Sources */,
+				80B5D8E32A169A5900CDCDD7 /* ActivityViewController.swift in Sources */,
+				80B5D8E12A169A4700CDCDD7 /* HomeViewController.swift in Sources */,
 				80E8C41029BD0C2C009089FC /* DataFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

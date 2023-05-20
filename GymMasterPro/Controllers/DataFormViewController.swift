@@ -12,7 +12,7 @@ class DataFormViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         addConstraints()
         
@@ -64,7 +64,7 @@ class DataFormViewController: UIViewController {
     let logoImage : UIImageView = {
         let logo = UIImageView()
         logo.translatesAutoresizingMaskIntoConstraints = false
-        logo.image = UIImage(named: "logoBlack")
+        logo.image = UIImage(named: "logoWhite")
         logo.setRounded()
         
         return logo
@@ -73,7 +73,7 @@ class DataFormViewController: UIViewController {
     let nameImage : UIImageView = {
         let name = UIImageView()
         name.translatesAutoresizingMaskIntoConstraints = false
-        name.image = UIImage(named: "nameLogoBlack")
+        name.image = UIImage(named: "nameImage")
         
         return name
     }()
@@ -92,7 +92,7 @@ class DataFormViewController: UIViewController {
     let emailTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -136,7 +136,7 @@ class DataFormViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "or"
-        label.backgroundColor = .white
+        label.backgroundColor = .systemBackground
         label.textAlignment = .center
         label.textColor = .systemGray3
         

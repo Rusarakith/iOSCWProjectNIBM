@@ -19,7 +19,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
         
         view.addGestureRecognizer(tap)
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         addConstraints()
         
@@ -31,6 +31,12 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    @objc func gotonextAction() {
+        let vc = TabBarViewController()
+//        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func saveUserData(){
@@ -48,14 +54,11 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
         
         let data = ["uid":uuid,"email":"", "firstName":firstNameTextField.text!, "lastName":lastNameTextField.text!, "dob":dobDate as Any, "age":userAge, "height":userHeight, "weight":userWeight] as [String : Any]
         
-//        Firestore.firestore().collection("User").document(uuid).setData(data)
         UserManager.shared.createUser(data: data, uuid: uuid)
         
+        gotonextAction()
+        
         print("Done!")
-//        Task{
-//            do{ Firestore.firestore().collection("User").document("12000").setData(["data":"Hi"])
-//            }
-//        }
         
     }
     
@@ -99,7 +102,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let dobTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -126,7 +129,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let logoImage : UIImageView = {
         let logo = UIImageView()
         logo.translatesAutoresizingMaskIntoConstraints = false
-        logo.image = UIImage(named: "logoBlack")
+        logo.image = UIImage(named: "logoWhite")
         logo.setRounded()
         
         return logo
@@ -135,7 +138,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let nameImage : UIImageView = {
         let name = UIImageView()
         name.translatesAutoresizingMaskIntoConstraints = false
-        name.image = UIImage(named: "nameLogoBlack")
+        name.image = UIImage(named: "nameImage")
         
         return name
     }()
@@ -153,7 +156,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let firstNameTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -181,7 +184,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let lastNameTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -209,7 +212,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let heightTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -237,7 +240,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let weightTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -275,7 +278,7 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
     let ageTextField : UITextField = {
         let text = UITextField()
         text.borderStyle = .none
-        text.backgroundColor = .white
+        text.backgroundColor = .systemBackground
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.systemGray3.cgColor
         text.layer.cornerRadius = 25
@@ -381,8 +384,8 @@ class PersonalDataViewController: UIViewController, UIImagePickerControllerDeleg
         logoImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 145).isActive = true
         logoImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -145).isActive = true
         
-        nameImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 165).isActive = true
-        nameImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -712 ).isActive = true
+        nameImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 180).isActive = true
+        nameImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -700 ).isActive = true
         nameImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 130).isActive = true
         nameImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -130).isActive = true
         

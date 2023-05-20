@@ -69,7 +69,7 @@ class FlashScreenViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.configure(with: IconButtonViewModel(primaryText: "Ready to Burn",
                                                    icon: UIImage(named: "rightArrow"),
-                                                   backgroundColor: .white,
+                                                   backgroundColor: .systemGreen,
                                                    iconSpace: 120))
         
         return button
